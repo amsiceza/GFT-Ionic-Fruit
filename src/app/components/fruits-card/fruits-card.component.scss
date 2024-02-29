@@ -1,6 +1,6 @@
 ion-card {
     --ancho-card: 300px;
-    --alto-card: 340px;
+    --alto-card: 350px;
     --fuente-titulo: 20px;
 
     width: var(--ancho-card);
@@ -80,7 +80,6 @@ ion-card {
         align-items: center;
         justify-content: center;
         flex-direction: row ;
-        margin-bottom: 1rem;
         gap: 2rem;
         
         h1{
@@ -113,9 +112,9 @@ ion-card {
         gap: 3rem;
         font-style: italic;
         margin-right: 1rem;
-        margin-bottom: 1rem;
         color: var(--verde-claro);
         font-size: 11px;
+        margin-bottom: 0.5rem;
     }
 }
 
