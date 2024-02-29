@@ -9,6 +9,7 @@ import { FruitsComponent } from '../components/fruits/fruits.component';
 import { FruitsCardComponent } from '../components/fruits-card/fruits-card.component';
 import { CartComponent } from '../components/cart/cart.component';
 import { CartCardComponent } from '../components/cart-card/cart-card.component';
+import { ConfirmCartComponent } from '../components/confirm-cart/confirm-cart.component';
 
 
 @NgModule({
@@ -18,6 +19,6 @@ import { CartCardComponent } from '../components/cart-card/cart-card.component';
     IonicModule,
     HomePageRoutingModule,
   ],
-  declarations: [HomePage, FruitsComponent, FruitsCardComponent, CartComponent, CartCardComponent]
+  declarations: [HomePage, FruitsComponent, FruitsCardComponent, CartComponent, CartCardComponent, ConfirmCartComponent]
 })
 export class HomePageModule {}
