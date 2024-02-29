@@ -1,0 +1,49 @@
+.fruit-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: #F1F5F1;
+    padding: 1rem 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--verde);
+    border-radius: 10px;
+    ion-button{
+        --background: transparent;
+        --box-shadow: none;
+        --color: var(--verde);
+        --border-radius: 50%;
+        --background-activated: rgba(158, 173, 159, 0.5);
+        --background-hover: none;
+        height: 50px;
+        width: 50px;
+        
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        span{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 12px;
+        }
+        img{
+            height: 30px;
+        }h1{
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: var(--verde-claro);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-weight: bold;
+            color: #F1F5F1;
+        }
+    }
+}

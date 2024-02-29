@@ -1,0 +1,41 @@
+<ion-card (click)="toggleShowInfo()">
+  <ion-card-content class="fruit-container" *ngIf="!showInfo">
+    <ion-card-title>{{ fruit?.nombre }}</ion-card-title>
+    <img src="{{ fruit?.img }}" alt="" />
+  </ion-card-content>
+  <img src="{{ fruit?.img }}" alt="" *ngIf="!showInfo" />
+
+  <ion-card-header *ngIf="showInfo">
+    <ion-card-title>
+      <img src="{{ fruit?.img }}" alt="" />{{ fruit?.nombre }}
+    </ion-card-title>
+    <ion-card-subtitle>
+      <p><span>Precio : </span> {{ fruit?.precio_por_kilo }} <span>€ / Kg</span></p>
+      <p><span>Stock : </span> {{ fruit?.stock_disponible }}</p>
+    </ion-card-subtitle>
+  </ion-card-header>
+
+  <hr />
+
+  <ion-card-content *ngIf="showInfo">
+    {{ fruit?.descripcion }}
+  </ion-card-content>
+
+  <ion-card-content class="container-btns" *ngIf="showInfo">
+    <ion-button (click)="removeItem($event)">
+      <span class="material-symbols-outlined"> remove </span>
+    </ion-button>
+    <h1>{{ fruit?.amount }}</h1>
+    <ion-button (click)="addItem($event)">
+      <span class="material-symbols-outlined"> add </span>
+    </ion-button>
+  </ion-card-content>
+
+  <div class="propiedades" *ngIf="showInfo">
+    <p>{{ fruit?.tipo }}</p>
+    <p>{{ fruit?.color }}</p>
+    <p>{{ fruit?.sabor }}</p>
+  </div>
+</ion-card>
+
+
